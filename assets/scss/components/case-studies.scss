@@ -1,0 +1,471 @@
+/*******************************
+    Case Studies Overall Page
+*******************************/
+
+.case-studies-intro {
+    padding-bottom: 150px;
+}
+
+.case-studies-intro .container-sm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-studies-intro h3 {
+    padding-right: 80px;
+    width: 580px;
+    margin-top: 35px;
+}
+
+.case-studies-overall {
+    position: relative;
+    padding-bottom: 150px;
+   &:before {
+        position: absolute;
+        top: 53px;
+        left: 0;
+        width: 100%;
+        height: 12px;
+        display: block;
+        content: '';
+        background: url(../../dist/images/list_arrow-alt.svg) repeat-x right 0;
+    }
+}
+
+.case-studies-overall .slider {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.case-studies-overall .slide {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    min-width: auto;
+    background-size: 250% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .6s;
+    &:hover {
+        background-size: 300% !important;
+    }
+}
+.case-studies-overall .slide:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+@media screen and (max-width:1540px) {
+    .case-studies-overall .slide {
+        width: 31%;
+        margin-right: 2.33%;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .case-studies-overall .slide {
+        width: 48%;
+        margin-right: 0;
+    }
+
+    .case-studies-overall .slider {
+        justify-content: space-between;
+    }
+
+    .case-studies-intro h3 {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .case-studies-intro .container-sm {
+        display: block;
+    }
+
+    .case-studies-intro h3 {
+        padding-right: 0;
+        padding-top: 25px;
+    }
+
+    .case-studies-intro {
+        padding-bottom: 70px;
+    }
+
+    .case-studies-overall {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .case-studies-overall .slide {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .case-studies-intro h3 {
+        width: auto;
+    }
+}
+
+/******************************
+    Case Studies Single Page
+******************************/
+.single-intro-flex {
+    padding: 120px 0;
+}
+
+.single-intro-flex .container-sm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sif-item {
+    border-top: 2px solid $green;
+    min-width: 455px;
+    width: 47%;
+}
+
+.sif-item-flex {
+    display: flex;
+}
+
+.sif-item-flex .cs-small-bold {
+    min-width: 185px;
+}
+.sif-item-flex .fact_title + .fact_title {
+    padding-left: 30px;
+}
+.sif-item-intro {
+    padding: 11px 0 37px;
+}
+.sif-item.case-team .cs-small-bold {
+    max-width: 185px;
+}
+
+@media screen and (max-width:1439px) {
+    .sif-item {
+        min-width: 31%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .single-intro-flex .container-sm {
+        display: block;
+    }
+
+    .sif-item {
+        padding-bottom: 40px;
+    }
+
+    .sif-item:nth-last-child(1) {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .single-intro-flex {
+        padding: 40px 0;
+    }
+
+    .sif-item-flex p {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0;
+    }
+
+    .sif-item-flex .cs-small-bold {
+        min-width: 155px;
+        letter-spacing: 0;
+    }
+}
+
+/* Gallery */
+
+.single-gallery {
+    position: relative;
+}
+
+.gallery {
+    width: 100%;
+    height: 860px;
+    position: relative;
+}
+
+.gallery-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include bgCenter;
+    opacity: 0;
+    transition: .5s;
+}
+
+.active-slide {
+    opacity: 1;
+}
+
+.gallery-dots {
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 17px 12px;
+    z-index: 55;
+    background: #f1eee6;
+    display: flex;
+    span {
+        display: block;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        margin: 0 8px;
+        background: #c4c4c4;
+        transition: all .6s;
+        cursor: pointer;
+        &:hover {
+            background: #67664d;
+        }
+        &.is-active {
+            background: #67664d;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.gallery-next {
+    position: absolute;
+    top:50%;
+    right:40px;
+    transform: translateY(-50%) rotate(180deg);
+    width: 45px;
+    height: 35px;
+    @include bgCenter;
+    transition: all .6s;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.gallery-prev {
+    position: absolute;
+    top:50%;
+    left:40px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 35px;
+    @include bgCenter;
+    transition: all .6s;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width:1620px) {
+    .gallery-next, .gallery-prev {
+        background-image: url('https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/gallery_arrow_cream.svg') !important;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .gallery {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .single-gallery .container-sm {
+        margin: 0 !important;
+    }
+
+    .gallery {
+        height: 250px;
+    }
+
+    .gallery-next {
+        right: 20px;
+
+    }
+
+    .gallery-prev {
+        left: 20px;
+    }
+
+    .gallery-dots {
+        bottom: 13px;
+        padding: 10px 6px;
+        span {
+            width: 6px;
+            height: 6px;
+            margin: 0 6px;
+        }
+    }
+}
+
+/***********************
+    Details Section
+***********************/
+.single-details {
+    padding: 100px 0;
+}
+
+.single-detail {
+    width: 635px;
+    margin: auto;
+    color: $green;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.sdc-desktop-img {
+    position: absolute;
+    top:0;
+    left: -85px;
+}
+
+.single-detail:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.single-detail-copy {
+    margin-left: 40px;
+    border-top: 2px solid $green;
+    width: 100%;
+}
+
+.sdc-mobile {
+    padding: 20px 0 25px 0;
+}
+
+.single-detail-copy ul {
+    margin-left: 25px;
+}
+
+.single-detail-copy li {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.single-detail-copy li::before {
+    content:'';
+    background-image:url('https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/list_arrow.svg');
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    top:2px;
+    left: -25px;
+}
+
+.single-detail-copy li:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.single-detail-copy p {
+    padding-bottom: 20px;
+}
+
+.single-detail-copy p:nth-last-child(1) {
+    padding-bottom: 0px;
+}
+
+.sdc-mobile-img {
+    display: none;
+}
+
+.single-details .single-detail-copy p,
+.single-details .single-detail-copy li {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+@media screen and (max-width:767px) {
+    .single-details {
+        padding: 40px 0;
+    }
+
+    .single-detail {
+        width: auto;
+        margin-bottom: 60px;
+    }
+
+    .sdc-desktop-img {
+        display: none;
+    }
+
+    .sdc-mobile-img {
+        display: block;
+        width: 52px;
+        margin-right: 15px;
+    }
+
+    .sdc-mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .single-detail-copy {
+        margin-left: 0;
+    }
+
+    .single-details .single-detail-copy p,
+    .single-details .single-detail-copy li {
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0;
+        strong {
+            letter-spacing: 0;
+        }
+    }
+}
+
+/**************************
+    Single Slider Section
+**************************/
+.single-slider {
+    padding-bottom: 180px;
+}
+
+.single-slider h2 {
+    position: relative;
+    padding: 40px 0 90px 0;
+    border-top: 2px solid $green;
+    color: $green;
+
+    & .has__swipe {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 61px;
+            height: 47px;
+            display: block;
+            background: url(../images/large-arrow.svg) no-repeat 0 0;
+            background-size: contain;
+            animation: swipe .8s alternate infinite;
+            animation-timing-function: ease;
+        }
+}
+
+
+
+@media screen and (max-width:767px) {
+    .single-slider h2 {
+        padding: 15px 0 70px 0;
+        font-size: 28px;
+        line-height: 34px;
+        margin: 0;
+        padding-left: 25px;
+
+        & .has__swipe {
+            display: none;
+        }
+    }
+
+    .single-slider {
+        padding-bottom: 70px;
+    }
+}

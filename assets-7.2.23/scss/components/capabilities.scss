@@ -1,0 +1,89 @@
+.capabilities::before {
+    content: 'tap a segment to view more.';
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: $green;
+    position: absolute;
+    top: -50px;
+}
+
+.capabilities {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding-bottom: 115px;
+}
+
+.capabilities-names {
+    margin-right: 50px;
+}
+
+.capability-name {
+    color: $green !important;
+    opacity: .25;
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.capability-name:hover {
+    opacity: 0.5;
+}
+.capability-name:nth-last-child(0) {
+    margin-bottom: 0;
+}
+
+.capability-inner {
+    position: relative;
+    top: 4px;
+    width: 680px;
+}
+
+.capability-copy {
+    position: absolute;
+    top: 0;
+    color: $green;
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.cmenu-name-1 {
+    opacity: 1;
+    border-left: 6px solid #67664D;
+    padding: 5px 0 5px 20px;
+}
+
+.capabilityBtn {
+    background-color: $green;
+    color: $bg;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1023px) {
+    .capabilities {
+        display: block;
+    }
+
+    .capabilities-names {
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    .capability-inner {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .capability-name {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}

@@ -1,0 +1,147 @@
+footer {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+    border-top: 1px solid $green;
+}
+
+.footer_flex {
+    display: flex;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.footer_flex > div {
+    width: 27.3%;
+}
+.footer_flex > div:last-child {
+    width: 82px;
+}
+
+.footer div {
+    margin-right: 100px;
+}
+
+.footer_logo {
+    margin-left: -42px;
+}
+
+.footer-nav .menu-item {
+    padding-left: 0;
+}
+
+.footer-nav .menu-item a {
+    color:  $green;
+    transition: all .6s;
+}
+.footer_left p a {
+    transition: all .6s;   
+}
+.footer_left p a:hover,
+.footer-nav .menu-item a:hover {
+    opacity: 0.5;
+}
+
+.footer_right {
+    width: 395px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_right p {
+    width: 100%;
+}
+
+.footer_btn {
+    padding: 13px 20px;
+}
+
+.footer_flex .dinger-bold {
+    padding-bottom: 15px;
+    height: 19px;
+}
+
+.footer_right .dinger-bold {
+    padding-bottom: 0;
+}
+
+.footer_absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 0 !important;
+    width: 82px;
+}
+
+.footer_absolute img {
+    width: 100%;
+}
+
+@media screen and (max-width:1620px) {
+    .footer_logo {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1199px) {
+    .footer_flex > div {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .footer_flex > div {
+        width: 100%;
+        padding-right: 0;
+    }
+    .footer_flex {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .footer_left {
+        width: 100%;
+        padding-bottom: 55px;
+        order: 2;
+    }
+
+    .footer_mid {
+        width: 100%;
+        padding-bottom: 55px;
+        order: 3;
+    }
+
+    .footer_right {
+        padding-bottom: 55px;
+        order: 1;
+    }
+
+    .footer_absolute {
+        position: static;
+        padding-bottom: 55px;
+        order: 4;
+    }
+
+    .footer_btn {
+        margin-top: 35px;
+        padding: 20px;
+        min-width: 270px;
+        width: 270px;
+    }
+
+    .footer_right .dinger-bold {
+        padding-bottom: 15px;
+        font-size: 28px;
+        line-height: 34px;
+        height: auto;
+        text-transform: none;
+        font-weight: 400;
+        letter-spacing: initial;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .footer_right {
+        width: 100%;
+    }
+}

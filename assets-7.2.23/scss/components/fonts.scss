@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'TT Hoves';
+    src: url(../../assets/fonts/TTHovesRegular/TTHovesRegular.eot);
+    src: url(../../assets/fonts/TTHovesRegular/TTHovesRegular.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/TTHovesRegular/TTHovesRegular.woff2) format('woff2'),
+        url(../../assets/fonts/TTHovesRegular/TTHovesRegular.woff) format('woff'),
+        url(../../assets/fonts/TTHovesRegular/TTHovesRegular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url(../../assets/fonts/TTHovesLight/TTHovesLight.eot);
+    src: url(../../assets/fonts/TTHovesLight/TTHovesLight.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/TTHovesLight/TTHovesLight.woff2) format('woff2'),
+        url(../../assets/fonts/TTHovesLight/TTHovesLight.woff) format('woff'),
+        url(../../assets/fonts/TTHovesLight/TTHovesLight.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url(../../assets/fonts/TTHovesDemiBold/TTHovesDemiBold.eot);
+    src: url(../../assets/fonts/TTHovesDemiBold/TTHovesDemiBold.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/TTHovesDemiBold/TTHovesDemiBold.woff2) format('woff2'),
+        url(../../assets/fonts/TTHovesDemiBold/TTHovesDemiBold.woff) format('woff'),
+        url(../../assets/fonts/TTHovesDemiBold/TTHovesDemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Hoves';
+    src: url(../../assets/fonts/TTHovesBold/TTHoves-Bold.eot);
+    src: url(../../assets/fonts/TTHovesBold/TTHoves-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../../assets/fonts/TTHovesBold/TTHoves-Bold.woff2) format('woff2'),
+        url(../../assets/fonts/TTHovesBold/TTHoves-Bold.woff) format('woff'),
+        url(../../assets/fonts/TTHovesBold/TTHoves-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

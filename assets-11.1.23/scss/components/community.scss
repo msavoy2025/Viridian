@@ -1,0 +1,465 @@
+/**************************
+    Under Intro Section
+**************************/
+
+.comm-uis {
+    padding-top: 300px;
+}
+
+.comm-under-intro {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+
+.cui-left {
+    width: 650px;
+}
+
+.cui-right {
+    width: 620px;
+    display: flex;
+    align-items: center;
+}
+
+.cui-right img {
+    margin-right: 40px;
+    width: 139px;
+    height: 134px;
+}
+
+.cui-right p {
+    width: 372px;
+}
+
+@media screen and (max-width:1023px) {
+    .comm-under-intro {
+        flex-wrap: wrap;
+    }
+
+    .cui-left {
+        width: 100%;
+    }
+
+    .cui-right {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .cui-right p {
+        width: 500px;
+    }
+
+    .comm-uis {
+        padding-top: 30px !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .cui-left {
+        order: 2;
+        padding-top: 220px;
+    }
+
+    .cui-right {
+        order: 1;
+        padding-top: 0;
+    }
+
+    .cui-right p {
+        width: 100%;
+    }
+
+    .cui-right img {
+        display: none;
+    }
+
+    .comm-under-intro {
+        padding-bottom: 0;
+    }
+}
+
+/*************************
+    Principles Section
+*************************/
+
+.comm-principles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cp-left {
+    width: 720px;
+}
+
+.cp-left h3 {
+    padding-bottom: 100px;
+}
+
+.cp-right {
+    width: 620px;
+}
+
+.cpl-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cpl-flex > div {
+    width: 337px;
+}
+
+.cpl-left p:nth-child(2), .cpl-right p:nth-child(2) {
+    padding-top: 100px;
+}
+
+.cpl-left p:nth-child(3),
+.cpl-right p:nth-child(3) {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.cpl-left img {
+    transform: rotate(180deg);
+}
+
+.cpl-right img {
+    transform: rotate(-90deg);
+}
+
+.cp-right .emph-sm {
+    padding: 60px 0;
+}
+
+@media screen and (max-width:1441px) {
+    .cp-left {
+        width: 605px;
+    }
+
+    .cpl-flex > div {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .comm-principles {
+        display: block;
+    }
+
+    .cp-left, .cp-right {
+        width: auto;
+    }
+
+    .cp-right {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .cpl-flex {
+        display: block;
+    }
+
+    .cpl-flex > div {
+        width: 100%;
+    }
+
+    .cp-left {
+        margin-top: 50px;
+    }
+
+    .cp-left h3 {
+        padding-bottom: 40px;
+    }
+
+    .cpl-left {
+        margin-bottom: 40px;
+    }
+
+    .cpl-left p:nth-child(2),
+    .cpl-right p:nth-child(2) {
+        padding-top: 40px;
+    }
+
+    .cpl-left img, .cpl-right img {
+        width: 57px;
+    }
+
+    .cp-right .emph-sm {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .cpl-left p:nth-child(3),
+    .cpl-right p:nth-child(3) {
+        font-size: 18px;
+    }
+
+}
+
+/**********************
+    Policy Section
+**********************/
+
+.comm-policy-section {
+    padding: 120px 0;
+    color: $green;
+}
+
+.comm-policy-section h1 {
+    padding-bottom: 100px;
+}
+
+.comm-policy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comm-policy > div {
+    width: 538px;
+}
+
+.comm-policy p {
+    padding-top: 25px;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+@media screen and (max-width:1279px) {
+    .comm-policy>div {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .comm-policy {
+        display: block;
+    }
+
+    .comm-policy>div {
+        width: 100%;
+    }
+
+    .comm-policy-left {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .comm-policy-section {
+        padding: 40px 0;
+    }
+
+    .comm-policy-left {
+        padding-bottom: 70px;
+    }
+
+    .comm-policy-section h1 {
+        padding-bottom: 70px;
+    }
+
+    .comm-policy p {
+        font-size: 18px;
+    }
+
+}
+
+
+/************************
+    Brownfield Section
+************************/
+.comm-brownfield-section {
+    color: $green;
+    background: linear-gradient(to bottom,
+        $bg 0%,
+        $bg 30%,
+        $darkBg 30%,
+        $darkBg 100%);
+}
+
+.comm-brownfield {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comm-brownfield-left {
+    width: 700px;
+}
+
+.comm-brownfield-left h1 {
+    padding-bottom: 200px;
+    padding-top: 60px;
+}
+
+.comm-brownfield-left h3 {
+    width: 555px;
+}
+
+@media screen and (max-width:1620px) {
+    .comm-brownfield {
+        align-items: flex-end;
+    }
+
+    .comm-brownfield-img {
+        width: 700px;
+    }
+
+    .comm-brownfield-img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1439px) {
+    .comm-brownfield-img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .comm-brownfield-img {
+        width: 100%;
+    }
+
+    .comm-brownfield {
+        display: block;
+    }
+
+    .comm-brownfield-left {
+        width: auto;
+    }
+
+    .comm-brownfield-left h1 {
+        padding: 70px 0;
+    }
+
+    .comm-brownfield-left h3 {
+        margin-bottom: 50px;
+        width: auto;
+    }
+
+    .comm-brownfield-section {
+        background: linear-gradient(to bottom,
+            $bg 0%,
+            $bg 15%,
+            $darkBg 15%,
+            $darkBg 100%);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .comm-brownfield-left h3 {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .comm-brownfield-section {
+        background: linear-gradient(to bottom,
+            $bg 0%,
+            $bg 26%,
+            $darkBg 26%,
+            $darkBg 100%);
+    }
+}
+
+/******************
+    PS Section
+******************/
+
+.comm-ps-section {
+    background-color: $darkBg;
+    padding: 140px 0 60px 0;
+}
+
+.comm-ps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comm-ps .problem, .comm-ps .solution {
+    width: 560px;
+}
+
+.comm-ps .solution {
+    padding-right: 100px;
+}
+
+@media screen and (max-width:1279px) {
+    .comm-ps {
+        display: block;
+    }
+
+    .comm-ps .problem,
+    .comm-ps .solution {
+        width: 100%;
+    }
+
+    .comm-ps .solution {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .comm-ps-section {
+        background-color: #e4e0d2;
+        padding: 80px 0 0 0;
+    }
+}
+
+
+/*******************
+    Icon Section
+*******************/
+.page-template-community .icon {
+    min-width: 130px;
+}
+
+@media screen and (max-width:1279px) {
+    .page-template-community .icon {
+        min-width: 175px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .page-template-community .icon {
+        min-width: 225px;
+    }
+}
+
+/*****************
+    CTA Section
+*****************/
+.comm-cta {
+    width: 680px;
+    padding: 200px 0 160px 0;
+}
+
+.comm-cta .emph-sm {
+    width: 540px;
+    padding: 70px 0;
+}
+@media screen and (max-width:1279px) {
+    .comm-cta .emph-sm,
+    .comm-cta {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .comm-cta {
+        width: auto;
+        padding: 70px 0;
+    }
+
+    .comm-cta .emph-sm {
+        width: auto;
+        padding: 40px 0 55px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .comm-cta h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}

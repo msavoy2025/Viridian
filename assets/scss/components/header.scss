@@ -1,0 +1,480 @@
+header {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_open, .nav_close {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-header-menu, .sub-menu {
+    list-style-type: none;
+}
+
+.header-menu {
+    display: flex;
+    position: relative;
+}
+
+.child-close {
+    display:none;
+    position: absolute;
+    top: -92px;
+    left: 35px;
+    background-color: $darkGreen;
+    color: $bg;
+    width: 360px;
+    padding: 20px 0;
+    z-index: 99999;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+.logo {
+    z-index: 10001;
+}
+.menu-item {
+    padding-left: 35px;
+    color: $green;
+    text-decoration: none;
+    position: relative;
+    z-index: 99999;
+}
+
+.menu-item-has-children {
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-menu-wrap {
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $green;
+    transition: .5s;
+}
+
+.sub-menu {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.sub-menu-items::before {
+    content:'tap a segment to view more.';
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: $bg;
+    position: absolute;
+    top: -50px;
+}
+
+.sub-menu-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    padding-bottom: 115px;
+}
+
+.sub-menu-item-name {
+    color: $bg !important;
+    opacity: .25;
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.sub-menu-item-name:hover {
+    opacity: 0.5;
+}
+
+.sub-menu-item-name:nth-last-child(0) {
+    margin-bottom: 0;
+}
+
+.sub-menu-item-inner {
+    position: relative;
+    width: 680px;
+}
+
+.sub-menu-item-copy {
+    position: absolute;
+    top: 0;
+    color: $bg;
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.sub-menu-item-name .menu-name-desk a {
+    color: inherit !important;
+}
+.menu-name-1 {
+    opacity: 1;
+    border-left: 6px solid #f1eee6;
+    padding: 5px 0 5px 20px;
+}
+
+.menu-copy-1 {
+    z-index: 999999;
+}
+
+.headerBtn {
+    background-color: $bg;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+}
+
+.headerBtn img {
+    margin-left: 20px;
+}
+
+.menu_mobile_work {
+    display: none;
+}
+
+.show {
+    opacity: 1 !important;
+    z-index: 999999 !important;
+}
+
+.menu-name-mob {
+    display: none;
+}
+
+.menu-item-with-arrow {
+    position: relative;
+}
+
+.home .menu-item-with-arrow::after {
+    content:'';
+    width: 16px;
+    height: 12px;
+    background-image:url('https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/list_arrow_cream.svg');
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: -25px;
+    @include bgCenter;
+}
+
+.menu-item-with-arrow::after {
+    content: '';
+    width: 16px;
+    height: 12px;
+    background-image: url('https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/list_arrow.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+    @include bgCenter;
+}
+
+.menu-img-swap {
+    position: relative;
+    top: -2px;
+    background-image:url('https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/logo_green.svg');
+    width: 138px;
+    height: 36px;
+    background-repeat: no-repeat;
+    @include bgCenter;
+    background-size: contain;
+}
+
+.menu-img-swap img {
+    display: none;
+}
+
+@media screen and (max-width:1700px) {
+    .nav_wrap {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .logo {
+        position: relative;
+        z-index: 999999;
+        height: 36px;
+        overflow: hidden;
+    }
+
+    .logo_desktop img {
+        width: 138px;
+    }
+
+    .nav_open, .nav_close {
+        display: block;
+        padding: 0 !important;
+        border-bottom: none !important;
+        position: relative;
+        z-index: 999999;
+    }
+
+    .menu_open {
+        left:0 !important;
+    }
+
+    .mobile_menu_txt {
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 22px;
+        color: $green;
+        padding:15px 0;
+        border-bottom: 1px solid #E4E0D2;
+    }
+
+    .home .nav_open {
+        color: $bg;
+    }
+
+    .menu_mobile_work {
+        display: block;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .nav_wrap {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .nav_inner {
+        margin: 0 30px;
+        height: 91%;
+        position: relative;
+    }
+
+    .header-menu {
+        display: block;
+        position: static;
+        margin-top: 100px;
+    }
+
+    .nav_wrap {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        z-index: 99999;
+        background-color: $bg;
+        transition: .5s;
+    }
+
+    .sub-menu-wrap {
+        position: static;
+        opacity: 1;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+    }
+
+    .sub-menu-item-name {
+        color: $green !important;
+    }
+
+    .sub-menu-item-inner {
+        display: none;
+    }
+
+    .sub-menu-item-name {
+        opacity: 1;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        padding:10px 0;
+    }
+
+    .menu-item {
+        padding-left: 0;
+    }
+
+    .sub-menu {
+        display: none;
+        min-width: 100%;
+    }
+
+    .sub-menu.container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sub-menu-items {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .mobile_menu_txt .bold {
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .menu-name-1 {
+        padding:10px 0;
+        border-left: none;
+    }
+
+    .menu-item-has-children {
+        position: relative;
+        border-bottom: none;
+    }
+
+    .menu_cs {
+        border-top: 1px solid #e4e0d2;
+    }
+
+    .mobile_cross_vert {
+        position: absolute;
+        right:21px;
+        top:50%;
+        width: 2px;
+        height: 0;
+        transform: translateY(-50%);
+        background-color: $green;
+        transition: .5s;
+    }
+
+    .checked {
+        height: 25px;
+    }
+
+    .mobile_cross_hor {
+        position: absolute;
+        right:10px;
+        top:50%;
+        width: 25px;
+        height: 2px;
+        transform: translateY(-50%);
+        background-color: $green;
+    }
+
+    .menu-item.mobile_menu_txt.bold {
+        position: absolute;
+        bottom: 30px;
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-name-desk {
+        display: none;
+    }
+
+    .menu-name-mob {
+        display: block;
+    }
+
+    .headerBtn img {
+        display: none;
+    }
+
+
+
+    .menu-item-with-arrow::after, .home .menu-item-with-arrow::after {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 560px) {
+    .menu-item.mobile_menu_txt.bold {
+        position: static;
+    }
+
+    .header-menu {
+        overflow: scroll;
+    }
+}
+
+header.header__hidden {
+    position: fixed;
+    top: -90px;
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    padding: 10px calc((100vw - 1500px)/2);
+    width: auto;
+    height: auto;
+    background: #67664d;
+    max-height: 66px;
+    z-index: 99999;
+    overflow: hidden;
+    transition: all .6s;
+
+    .child-close {
+        top: -21px;
+        padding: 0;
+        font-size: 11px;
+        line-height: 1.36;
+    }
+    .logo_desktop {
+        width: 47px;
+        overflow: hidden;
+        img {
+            min-width: 184px;
+        }
+    }
+    .menu-item {
+        color: #f1eee6 !important;
+    }
+    .menu-item-with-arrow::after {
+        content: "";
+        width: 16px;
+        height: 12px;
+        background-image: url(https://viridian.flywheelsites.com/wp-content/themes/viridian/dist/images/list_arrow_cream.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -25px;
+        background-size: cover;
+        background-position: center;
+    }
+    .sub-menu-wrap {
+        visibility: hidden;
+    }
+}
+
+.show__header.show__header-top header.header__hidden {
+    top: 0;
+}
+
+@media screen and (max-width:1620px) {
+    header.header__hidden {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    header.header__hidden {
+        display: none;
+    }
+}
