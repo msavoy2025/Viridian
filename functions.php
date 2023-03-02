@@ -1,5 +1,6 @@
 <?php
 /* Login Page Changes */
+//Testing Git Updates
 function my_login_logo() { ?>
 	<style type="text/css">
 		body {
