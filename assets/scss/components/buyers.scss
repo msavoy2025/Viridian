@@ -542,6 +542,17 @@
             right: -55px;
             margin: -86px 0 0;
         }
+        &:nth-child(8n+9) {
+            position: relative;
+            //right: -55px;
+            margin: 0;
+        }
+        &:nth-child(8n+10) {
+            position: relative;
+            right: -55px;
+            top: 25px;
+            margin: 0;
+        }
         img {
             max-width: none;
             min-width: auto;
@@ -596,9 +607,33 @@
                 right: 0;
                 margin: 0;
             }
+            &:nth-child(8n+9) {
+                position: relative;
+                margin: 0;
+            }
+
+            &:nth-child(8n+10) {
+                position: relative;
+                right: 0;
+                margin: 0;
+            }
             img {
                 max-width: 80%;
                 height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .icons {
+        justify-content: space-between;
+    }
+
+    .sellers-testimonials-section+.icons-section {
+        .icon {
+            &:nth-child(8n+10) {
+                top: auto;
             }
         }
     }
