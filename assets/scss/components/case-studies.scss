@@ -447,6 +447,22 @@
             background-size: contain;
             animation: swipe .8s alternate infinite;
             animation-timing-function: ease;
+
+            &:before {
+                content: "swipe for more";
+                position: absolute;
+                right: 80px;
+                width: 145px;
+                top: 51%;
+                transform: translateY(-50%);
+                font-family: 'TT Hoves';
+                font-size: 13px;
+                line-height: 1.69;
+                font-weight: 700;
+                letter-spacing: .17em;
+                color: $green;
+                text-transform: uppercase;
+            }
         }
 }
 
