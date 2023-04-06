@@ -292,3 +292,18 @@ h3 {
         right: 25px;
     }
 }
+
+/************************
+    Default Template
+************************/
+
+.default-temp h3 {
+    padding: 60px 0 10px 0;
+    margin-bottom: 60px;
+    color: $green;
+    border-bottom: 1px solid $green;
+}
+
+.default-content {
+    padding-bottom: 100px;
+}
