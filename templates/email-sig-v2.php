@@ -50,7 +50,7 @@ Template Name: Email Sig V2
 <table class="table__StyledTable-sc-1avdl6r-0 jWJRxL" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial;" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block; background-color: #67664d;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: #67664d;" src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/phone-icon-2x.png" alt="mobilePhone" width="13" /></span></td>
+<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block;" src="https://viridianpartners.com/wp-content/uploads/2023/04/phone-icon-green-1.webp" alt="mobilePhone" width="13" /></span></td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ Template Name: Email Sig V2
 <table class="table__StyledTable-sc-1avdl6r-0 jWJRxL" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial;" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block; background-color: #67664d;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: #67664d;" src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/email-icon-2x.png" alt="emailAddress" width="13" /></span></td>
+<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block;" src="https://viridianpartners.com/wp-content/uploads/2023/04/email-icon-green-1.webp" alt="emailAddress" width="13" /></span></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ Template Name: Email Sig V2
 <table class="table__StyledTable-sc-1avdl6r-0 jWJRxL" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Arial;" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block; background-color: #67664d;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block; background-color: #67664d;" src="https://cdn2.hubspot.net/hubfs/53/tools/email-signature-generator/icons/link-icon-2x.png" alt="website" width="13" /></span></td>
+<td style="vertical-align: bottom;"><span class="contact-info__IconWrapper-sc-mmkjr6-1 hBHfIp" style="display: inline-block;"><img class="contact-info__ContactLabelIcon-sc-mmkjr6-0 dGVIJx" style="display: block;" src="https://viridianpartners.com/wp-content/uploads/2023/04/link-icon-green.webp" alt="website" width="13" /></span></td>
 </tr>
 </tbody>
 </table>
