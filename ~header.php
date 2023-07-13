@@ -8,8 +8,8 @@
 <meta property="og:video" content="<?php echo get_theme_file_uri('/dist/images/Anchovies_Logo.mp4') ?>" />
 <meta property="og:title" content="Anchovies" />
 <meta property="og:description" content="Anchovies is a creative agency unafraid to shake things up in order to fill the world with surprise and delight." />
-<meta property="og:type" content="website" />
-<link rel="shortcut icon" href="<?php echo get_theme_file_uri('/dist/images/logo_icon.svg'); ?>" type="image/x-icon">-->
+<meta property="og:type" content="website" />-->
+<link rel="shortcut icon" href="<?php echo get_theme_file_uri('/dist/images/icon_green.ico'); ?>" type="image/x-icon">
 
 <title>Viridian</title>
 <?php wp_head(); ?>
