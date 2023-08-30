@@ -10,10 +10,18 @@
 <meta property="og:description" content="Anchovies is a creative agency unafraid to shake things up in order to fill the world with surprise and delight." />
 <meta property="og:type" content="website" />-->
 <link rel="shortcut icon" href="<?php echo get_theme_file_uri('/dist/images/icon_green.ico'); ?>" type="image/x-icon">
-
-
 <title>Viridian</title>
 <?php wp_head(); ?>
+
+<!-- Google tag (gtag.js) -->
+<script async src=https://www.googletagmanager.com/gtag/js?id=UA-39193253-1></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-39193253-1');
+</script>
 </head>
 
 <body <?php body_class(); ?>>
